@@ -1,9 +1,10 @@
 import React from 'react'
+import Form from '../components/Form'
 
 export default function Tasks() {
   return (
-    <div className='bg-base-200'>
-        
+    <div>
+        <Form />
     </div>
   )
 }
