@@ -6,7 +6,6 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Landing from './views/Landing';
 import Tasks from './views/Tasks';
-import Profile from './views/Profile';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
@@ -18,7 +17,6 @@ root.render(
       <Route path="/" element={<App />}>
       <Route index="/Landing" element={<Landing />}/>
       <Route path='/Tasks' element={<Tasks />}/>
-      <Route path='/Profile' element={<Profile />}/>
     </Route>
     </Routes>
     </BrowserRouter>

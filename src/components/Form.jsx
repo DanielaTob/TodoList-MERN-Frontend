@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useEffect, useState} from "react";
 import { MdSend } from 'react-icons/md';
 import Task from "./Task";
+import axios from "axios";
 
 export default function Form() {
+  const [data, setData] =useState([]);
+
+  useEffect(() => {
+      api();
+  }, [])
+
+  async function api(){
+    axios.get('http://localhost:4000/api/tasks')
+    .then(res=>{
+      const result=res.data;
+      setData(result);
+    })
+  }
   return (
     <div>
     <h1 className="bg-base-200 text-slate-400 text-center p-2 font-medium text-xl">Write your Task!</h1>
@@ -28,16 +42,21 @@ export default function Form() {
             <input type="text" placeholder="Type here" className="input input-bordered input-info w-full max-w-xs"></input>
           </div>
           <div className="flex items-center justify-between">
-            <button class="btn btn-info">
+            <button type="submit" class="btn btn-info">
                 <MdSend className="text-white"/>
             </button>
           </div>
         </form>
       </div>
 
-        <Task />
-        <Task />
-        <Task />
+{
+  data.map(items =>{
+    return <Task title={items.title} description={items.description}/>
+  })
+}
+
+        
+
    
     </div>
     </div>

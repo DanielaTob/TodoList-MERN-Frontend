@@ -18,11 +18,6 @@ export default function Navbar() {
               <a>Tasks</a>
               </Link>
             </li>
-            <li>
-              <Link to="Profile">
-              <a>Profile</a>
-              </Link>
-            </li>
           </ul>
         </div>
       </div>

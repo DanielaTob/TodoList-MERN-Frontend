@@ -8,7 +8,7 @@ export default function Landing() {
   return (
     <div>
       <Scroll />
-      <div className="bg-stone-700">
+      <div>
         <div className="hero min-h-screen bg-base-200">
           <div class="hero-content flex-col lg:flex-row">
             <img
