@@ -1,6 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import imghome from "../assets/img/landing.png";
 import Scroll from "../components/Scroll";
+
 
 export default function Landing() {
   return (
@@ -20,7 +22,9 @@ export default function Landing() {
                 assumenda excepturi exercitationem quasi. In deleniti eaque aut
                 repudiandae et a id nisi.
               </p>
+              <Link to="/Tasks">
               <button className="btn btn-info text-white">Get Started</button>
+              </Link>
             </div>
           </div>
         </div>
