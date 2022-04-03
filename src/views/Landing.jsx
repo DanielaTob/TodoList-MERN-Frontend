@@ -1,12 +1,9 @@
 import React from "react";
 import imghome from "../assets/img/landing.png";
-import Navbar from "../components/Navbar";
 
 export default function Landing() {
   return (
     <div>
-            <Navbar />
-        
       <div className="bg-stone-700">
         <div className="hero min-h-screen bg-base-200">
           <div class="hero-content flex-col lg:flex-row">
