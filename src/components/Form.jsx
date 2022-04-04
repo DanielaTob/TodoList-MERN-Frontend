@@ -17,6 +17,31 @@ export default function Form() {
       setData(result);
     })
   }
+
+  const dato = {
+    title: "",
+    description: ""
+  }
+
+  function createTask(){
+    const array=document.querySelectorAll(".task")
+    if (array){
+      for (let index = 0; index < array.length; index++){
+        if (array[index].value==""){
+          continue
+        }
+        dato.task.push(array[index.value]);
+      }
+    } 
+    dato.title="hola"
+    dato.description="holaaaa"
+
+    axios.post('http://localhost:4000/api/tasks', dato)
+    .then(res=>{
+      console.log(res.dato);
+    })
+    console.log(dato);
+  }
   return (
     <div>
     <h1 className="bg-base-200 text-slate-400 text-center p-2 font-medium text-xl">Write your Task!</h1>
@@ -42,7 +67,7 @@ export default function Form() {
             <input type="text" placeholder="Type here" className="input input-bordered input-info w-full max-w-xs"></input>
           </div>
           <div className="flex items-center justify-between">
-            <button type="submit" class="btn btn-info">
+            <button onClick={createTask} type="submit" class="btn btn-info">
                 <MdSend className="text-white"/>
             </button>
           </div>
