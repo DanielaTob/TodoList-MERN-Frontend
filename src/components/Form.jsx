@@ -3,7 +3,6 @@ import { MdSend } from 'react-icons/md';
 import { FaTrash } from "react-icons/fa";
 import { FaEdit } from "react-icons/fa";
 import axios from "axios";
-import { Link } from "react-router-dom";
 
 export default function Form() {
   const [data, setData] =useState([]);
@@ -96,11 +95,11 @@ export default function Form() {
             <input ref={description} type="text" placeholder="Type here" className="input input-bordered input-info w-full max-w-xs"></input>
           </div>
           <div className="flex items-center justify-between">
-            <Link to="/Landing">
+            
             <button onClick={(e)=>createTask(e)} type="submit" class="btn btn-info">
                 <MdSend className="text-white"/>
             </button>
-            </Link>
+           
           </div>
         </form>
       </div>
