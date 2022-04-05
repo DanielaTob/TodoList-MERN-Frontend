@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef} from "react";
+import { useNavigate } from 'react-router';
 import { MdSend } from 'react-icons/md';
 import { FaTrash } from "react-icons/fa";
 import { FaEdit } from "react-icons/fa";
@@ -9,6 +10,7 @@ export default function Form() {
   const title = useRef("");
   const description = useRef("");
   const [id, setId] = useState("");
+  const navigate = useNavigate();
 
 
   useEffect(() => {
@@ -49,6 +51,7 @@ export default function Form() {
     console.log(dato);
     }
     setId("");
+    navigate("/Landing")
   }
 
   
