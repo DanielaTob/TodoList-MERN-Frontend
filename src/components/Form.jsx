@@ -3,6 +3,7 @@ import { MdSend } from 'react-icons/md';
 import { FaTrash } from "react-icons/fa";
 import { FaEdit } from "react-icons/fa";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 export default function Form() {
   const [data, setData] =useState([]);
@@ -30,8 +31,8 @@ export default function Form() {
   }
 
   
-  function createTask(){
-    
+  function createTask(e){
+    e.preventDefault();
     dato.title= title.current.value
     dato.description= description.current.value
     if(id){
@@ -95,9 +96,11 @@ export default function Form() {
             <input ref={description} type="text" placeholder="Type here" className="input input-bordered input-info w-full max-w-xs"></input>
           </div>
           <div className="flex items-center justify-between">
-            <button onClick={createTask} type="submit" class="btn btn-info">
+            <Link to="/Landing">
+            <button onClick={(e)=>createTask(e)} type="submit" class="btn btn-info">
                 <MdSend className="text-white"/>
             </button>
+            </Link>
           </div>
         </form>
       </div>
