@@ -51,7 +51,7 @@ export default function Form() {
     console.log(dato);
     }
     setId("");
-    navigate("/Landing")
+    navigate("/")
   }
 
   
