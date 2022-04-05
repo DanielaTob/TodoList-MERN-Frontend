@@ -30,8 +30,8 @@ export default function Form() {
   }
 
   
-  function createTask(e){
-    e.preventDefault();
+  function createTask(){
+
     dato.title= title.current.value
     dato.description= description.current.value
     if(id){
@@ -75,7 +75,7 @@ export default function Form() {
     <h1 className="bg-base-200 text-slate-400 text-center p-2 font-medium text-xl">Write your Task!</h1>
     <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4 place-items-center min-h-screen bg-base-200">
       <div className="w-full max-w-xs">
-        <form className="bg-base-100 shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <form onSubmit={createTask} className="bg-base-100 shadow-md rounded px-8 pt-6 pb-8 mb-4">
           <div className="mb-4">
             <label
               className="block text-slate-400 text-sm font-bold mb-2"
@@ -96,7 +96,7 @@ export default function Form() {
           </div>
           <div className="flex items-center justify-between">
             
-            <button onClick={(e)=>createTask(e)} type="submit" class="btn btn-info">
+            <button onClick={createTask} type="submit" class="btn btn-info">
                 <MdSend className="text-white"/>
             </button>
            
