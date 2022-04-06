@@ -22,10 +22,14 @@ https://todo-list-daniela.herokuapp.com/api/tasks
 
 ## Built With  🛠️
 
-
-* [React.js](https://es.reactjs.org/)
-* [Tailwind.css](https://tailwindcss.com/)
 * [Axios](https://axios-http.com/docs/intro)
+
+<img  src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
+
+<img  src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"/>
+
+<img  src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge"/>
+
 
 
 ## Developers :smiley_cat:
