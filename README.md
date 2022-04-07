@@ -38,6 +38,8 @@ https://todo-list-daniela.herokuapp.com/api/tasks
 Developed by:  [Daniela Tobar](https://github.com/DanielaTob)
 
 
+![Snake animation](https://github.com/rafaballerini/rafaballerini/blob/output/github-contribution-grid-snake.svg)
+
 
 
 
