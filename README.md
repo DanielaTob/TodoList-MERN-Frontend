@@ -2,6 +2,10 @@
 
 Regain your clarity and peace of mind by taking all those tasks out of your head to put on your Smart Task!, no matter where you are. Smart Task! gives you the peace of mind of knowing that everything is properly organized and registered so that you can progress in the things that are really important to you.
 
+## Backend repository
+
+https://github.com/DanielaTob/TodoList-MERN-Backend
+
 [![smartmockups-l1n045mj-removebg-preview.png](https://i.postimg.cc/HxGj4rNB/smartmockups-l1n045mj-removebg-preview.png)](https://postimg.cc/xkR091nz)
 
 ## Home 
